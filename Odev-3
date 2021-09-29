@@ -1,0 +1,13 @@
+# Patika-SQL-Al-t-rmalar-
+
+Select * from country
+where country Like 'A%a' ;
+
+Select * from country
+where Length (country) >= 6 And country Like '%n' ;
+
+Select * from film
+Where title Ilike '%T%T%T%T' ;
+
+Select * from film
+where title Like 'C%' And length > 90 And rental_rate = 2.99 ;
