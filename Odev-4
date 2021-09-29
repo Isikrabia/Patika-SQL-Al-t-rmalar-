@@ -1,0 +1,14 @@
+# Patika-SQL-Al-t-rmalar-
+--ÖDEV-4
+Select Distinct replacement_cost From film ;
+
+Select Count (Distinct replacement_cost) From film ;
+
+Select Count (*) From film
+where title Like 'T%' And rating = 'G' ;
+
+Select Count (*) From country
+where country Like '_____' ;
+
+Select Count (*) From city
+where city Ilike '%R' ;
