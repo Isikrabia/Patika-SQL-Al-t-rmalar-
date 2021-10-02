@@ -1,0 +1,13 @@
+# Patika-SQL-Al-t-rmalar-
+--Odev-6
+Select AVG (rental_rate) from film;
+Select ROUND(AVG (rental_rate),3) from film;
+
+Select Count (*) From film
+where title Like 'C%' ;
+
+Select MAX(length) From film
+Where rental_rate = 0.99 ;
+
+Select Count(Distinct replacement_cost) From film
+Where length > 150 ;
