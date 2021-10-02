@@ -1,0 +1,5 @@
+# Patika-SQL-Al-t-rmalar-
+Select * from film
+where title Like '%n'
+Order by length desc
+limit 5 ;
