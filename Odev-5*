@@ -1,0 +1,17 @@
+# Patika-SQL-Al-t-rmalar-
+
+Select * from film
+where title Like '%n'
+Order by length desc
+limit 5 ;
+
+Select * from film
+where title Like '%n'
+Order by length ASC
+Offset 5
+limit 5 ;
+
+Select * from customer
+where store_id = 1
+Order By last_name Desc
+Limit 4
