@@ -1,0 +1,30 @@
+# Patika-SQL-Al-t-rmalar-
+
+-- Soru:1
+Select Count(length) 
+From film
+Where length >
+( Select AVG(length)
+ From film
+);
+-- Soru:2
+Select Count(rental_rate) 
+From film
+Where rental_rate =
+( Select MAX (rental_rate)
+ From film
+);
+-- Soru:3
+Select film_id, title, rental_rate, replacement_cost
+From film
+where rental_rate = ALL
+(Select Min(rental_rate) from film
+)
+And replacement_cost =ALL
+(Select Min(replacement_cost) from film
+);
+-- Soru:4
+Select Distinct(customer_id) From payment 
+Where customer_id = ANY 
+ ( Select COUNT(*) From payment Group By customer_id) 
+ Order by customer_id DESC ;
